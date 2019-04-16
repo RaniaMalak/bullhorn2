@@ -22,9 +22,9 @@ public class Message {
     @Size(min=3)
     private String content;
 
-    //  @NotNull
-    // @Size(min=5)
-    private Date postdate;
+      @NotNull
+     @Size(min=5)
+    private String postdate;
 
     @NotNull
     @Size(min=3)
@@ -40,7 +40,7 @@ public class Message {
         return content;
     }
 
-    public Date getPostdate() {
+    public String getPostdate() {
         return postdate;
     }
 
@@ -56,7 +56,7 @@ public class Message {
         this.content = content;
     }
 
-    public void setPostdate(Date postdate) {
+    public void setPostdate(String postdate) {
         this.postdate = postdate;
     }
 
